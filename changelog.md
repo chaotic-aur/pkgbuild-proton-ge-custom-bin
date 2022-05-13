@@ -1,4 +1,4 @@
-## GE-Proton7-16 Released
+## GE-Proton7-17 Released
 - This is just a minor update/hotfix release.
 - sapi-iteration-tokens staging patchset updated. Fixes Bless Unleashed launcher crash and fixes performance hit when patch set is not applied. Game is now playable.
 - wine updated to latest bleeding edge
