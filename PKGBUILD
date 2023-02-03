@@ -11,7 +11,7 @@
 ## pkginfo
 pkgdesc='A fancy custom distribution of Valves Proton with various patches'
 pkgname=proton-ge-custom-bin
-pkgver=GE_Proton7_47
+pkgver=GE_Proton7_48
 pkgrel=1
 epoch=1
 arch=('x86_64')
