@@ -1,6 +1,6 @@
 pkgbase = proton-ge-custom-bin
 	pkgdesc = A fancy custom distribution of Valves Proton with various patches
-	pkgver = GE_Proton7_48
+	pkgver = GE_Proton7_49
 	pkgrel = 1
 	epoch = 1
 	url = https://github.com/GloriousEggroll/proton-ge-custom
@@ -42,7 +42,7 @@ pkgbase = proton-ge-custom-bin
 	optdepends = wine: support for 32bit prefixes
 	optdepends = xboxdrv: gamepad driver service
 	provides = proton
-	provides = proton-ge-custom=GE.Proton7_48
+	provides = proton-ge-custom=GE.Proton7_49
 	conflicts = proton-ge-custom
 	options = !strip
 	options = emptydirs
