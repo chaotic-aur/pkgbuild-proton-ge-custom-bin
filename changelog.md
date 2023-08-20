@@ -9,10 +9,10 @@
 - Protonfix added for Persona 5 Strikers audio (thanks marianoag)
 - Protonfix added for Shin Megami Tensei III Nocturne HD Remaster audio (thanks marianoag)
 - Protonfix added for Memento Mori logo hang and broken videos (thanks marianoag)
-- Protonfix added for Tex Murphy: Overseer (thanks marianoag):
-- Digital Sound Initialization Error (Intel RSX 3D drivers are not installed)
-- LAV Filters for video and DgVoodoo for textures
-- edit registry to avoid ffdshow compatibility manager popup
+- Protonfix added for Tex Murphy: Overseer (thanks marianoag):  
+Digital Sound Initialization Error (Intel RSX 3D drivers are not installed)  
+LAV Filters for video and DgVoodoo for textures  
+edit registry to avoid ffdshow compatibility manager popup
 - Protonfix added for Alternativa logo hang and broken videos (thanks marianoag)
 - Protonfix added for The Big Secret of a Small Town no cursor or double cursor selecting custom cursor in options (thanks marianoag)
 - Protonfix added for Escape From Monkey Island force anti-aliasing and allow higher resolution (thanks marianoag)
