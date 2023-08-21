@@ -1,3 +1,11 @@
+## GE-Proton8-13
+
+-HOTFIX-
+
+- steam helper MR https://github.com/ValveSoftware/Proton/pull/6555 re-added and updated. Allows -northstar to work with Titanfall 2 while not breaking other games that use bash script launchers. This also allows other launch options to be used alongside -northstar option, regardless of arguement ordering (ie -northstar -novid, or -novid -northstar). This MR also allows launch options to be used with EA games (link2ea commands).
+
+- Updated Titanfall 2 protonfix to restore original Titanfall2.exe if NorthstarLauncher.exe symlink was previously used. (the -northstar option does not use/need NorthstarLauncher.exe, it works instead via wsock32 override)
+
 ## GE-Proton8-12
 
 - FSR is no longer enabled by default as it was found to limit in-game resolutions in some games. To enable/use it you will need WINE_FULLSCREEN_FSR=1 alongside the usual options.
