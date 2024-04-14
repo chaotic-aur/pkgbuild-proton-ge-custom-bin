@@ -1,4 +1,48 @@
-## GE-Pronto9-2
+## GE-Proton9-3
+
+    COPYPREFIX=1 option added. What this does:
+
+By default steam stores the wine prefixes in the steam library where the game is installed under SteamLibrary/steamapps/compatdata/ as well as shader cache files in shadercache/. When 'Steam Deck' session aka gamescope session is used, the -steamdeck option is appended to steam. This causes the default path for prefix compatdata and shadercache to change to the default steam install location ~/.steam/steam/steamapps/compatdata (or shadercache). This can be problematic if you are say for example switching from normal desktop steam to steamdeck. Or for example if you have a portable hard drive or SD card you keep your games on to use between the two. If you did something like say install mods for a game or played a game that doesnt work with cloud saves on the desktop, the prefix would not get used when you move the drive over from the desktop to steamdeck. Instead steamdeck would try to make a new one. The same goes in reverse for if you play games on the steam deck and try to move the game drive or sd card to a desktop.
+
+What COPYPREFIX=1 DOES is if -steamdeck is applied it will check if a prefix exists on the game partition/drive. If it does, it will then WIPE the steamdeck prefix, and replace it with the one from the game partition/drive. . It does this with shader cache as well. This way steam will pick up your mods/saves that you had on your desktop or other PC you used the drive on before.
+
+Alternatively, if -steamdeck is NOT applied -- it works in reverse. It will try to wipe the prefix on the game partition, and replace it with the one in steamdeck's default location. It does this with shader cache as well. A good use case for the reverse of the desktop -- say you've put in a ton of hours on a game with saves that don't work with steam cloud saving -- or have a bunch of mods you've applied on a game on your steam deck -- then you want to migrate to your desktop. In this case, put steam in desktop mode. Close steam then re-open it from the terminal using the steam command so that -steamdeck is NOT applied, then you can use COPYPREFIX to copy the steamdeck prefix to your game's partition/drive.
+
+Again to clarify usage scenarios:
+
+Steam launched in deck mode (-steamdeck applied) or from terminal with -steamdeck = copy FROM game partition prefix TO steamdeck prefix
+
+OR
+
+Steam launched from desktop shortcut or terminal without -steamdeck -- copy FROM steamdeck prefix TO game partition prefix.
+
+How to use:
+
+Put COPYPREFIX=1 %command% in the game launch options. When you run the game it will copy the prefix. You can remove the option afterwards.
+
+Please be careful when using this, it wipes the destination prefix contents before copying.
+
+Other updates:
+-wine updated to latest bleeding edge
+-dxvk updated to latest git
+-vkd3d-proton updated to latest git
+-imported upstream proton changes
+-imported upstream steamclient changes
+
+Protonfixes:
+
+    Add XAudio 2.9 verb for Space Engineers
+    Update Cease to Breathe fix
+    fix audio for in-game videos YOU and ME and HER: A Love Story
+    Game fix for Fallout 76 -- this one needs a double check. It adds faudio to the prefix, but faudio is already built into proton's wine. Not sure if this is still needed.
+
+UMU:
+
+    add a way to run winetricks within proton on the fly
+    Many refactors in protofixes by R1kaB3rN and Root-Core
+
+
+## GE-Proton9-2
 
 - wine updated to latest bleeding edge
 - dxvk updated to latest git
