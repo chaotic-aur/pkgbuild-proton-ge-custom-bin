@@ -1,3 +1,8 @@
+## GE-Proton9-4
+
+- hotfix: fix issue with protonfixes not getting applied (R1kaB3rN)
+- vkd3d-proton: update to work around halo infinite bug HansKristian-Work/vkd3d-proton@1d73fdc
+
 ## GE-Proton9-3
 
     COPYPREFIX=1 option added. What this does:
