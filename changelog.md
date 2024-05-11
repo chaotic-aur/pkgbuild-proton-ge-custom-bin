@@ -1,3 +1,27 @@
+## GE-Proton9-5
+
+- added TCP_KEEP patches needed for Star Citizen 2.0 launcher
+- updated wine to latest bleeding edge (fixes Apex Legends)
+- updated dxvk to latest git
+- updated vkd3d-proton to latest git
+- updated dxvk-nvapi to match upstream
+- updated various build files to match upstream
+- updated steam client to match upstream
+- added upstream cpu topology fixes
+- protonfixes: Add fix for The Witcher 2: Assassins of Kings Enhanced Edition (thanks R1kaB3rN)
+- protonfixes: Add fix for COJ Gunslinger (thanks Tiagoquix)
+- protonfixes: Add fix for Total War: Shogun 2 (thanks Crumb5)
+- protonfixes: Update Oddworld: Munch's Oddysee fix (thanks doZenn)
+- protonfixes: Add fix for Oddworld: Abe's Oddysee (thanks doZenn)
+- protonfixes: Add fix for Overlord II (thanks doZenn)
+- protonfixes: Add fix for Stranger's Wrath HD (thanks doZenn)
+- protonfixes: Add fix for Ducati World Championship (thanks doZenn)
+- protonfixes: Add fix for Add fix for Café Stella and the Reaper's Butterflies (thanks R1kaB3rN)
+- protonfixes: Add fix for Add fix for Sabbat of the Witch (thanks R1kaB3rN)
+- protonfixes: Add fix for Add fix for Riddle Joker (thanks R1kaB3rN)
+- protonfixes: Add fix for Add fix for Senren * Banka (thanks R1kaB3rN)
+- protonfixes: Add fix for (Newest) Many WMP9 Video Playback fixes for Yuzusoft VN's (thanks R1kaB3rN)
+
 ## GE-Proton9-4
 
 - hotfix: fix issue with protonfixes not getting applied (R1kaB3rN)
