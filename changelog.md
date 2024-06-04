@@ -1,3 +1,16 @@
+## GE-Proton9-6
+
+Nothing too crazy with this release, mostly just importing upstream changes from Valve this time around.
+
+- Persona 4 Golden video fixes have been re-added.
+- wine updated to latest bleeding edge
+- dxvk updated to latest git
+- vkd3d-proton updated to latest git
+- upstream proton changes added
+- upstream steamclient changes added
+- upstream wineopenxr changes added
+
+
 ## GE-Proton9-5
 
 - added TCP_KEEP patches needed for Star Citizen 2.0 launcher
