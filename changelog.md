@@ -1,3 +1,14 @@
+## GE-Proton9-7
+
+HOTFIXES:
+- update FSR patchset, to fix colour issue on HD Graphics 630 (thanks loathingKernel)
+- proton: Fix typo for calling winetricks gui with protontricks (thanks R1kaB3rN)
+- steam_helper: import upstream changes
+- build: import upstream changes
+- dxvk: update dxvk
+- wine: update bleeding edge -- Adds FULLSCREEN_PRESERVE_WINDOW_SIZE option to enable fullscreen workaround for preserving window size.
+
+
 ## GE-Proton9-6
 
 Nothing too crazy with this release, mostly just importing upstream changes from Valve this time around.
