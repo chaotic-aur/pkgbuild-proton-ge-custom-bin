@@ -1,3 +1,9 @@
+## GE-Proton9-9
+
+Hotfix:
+- When I updated winetricks in 9-8 I forgot to make it executable. This fixes it so winetricks is executable again.
+
+
 ## GE-Proton9-8
 
 - wine updated to latest bleeding edge
