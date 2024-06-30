@@ -1,3 +1,21 @@
+## GE-Proton9-8
+
+- wine updated to latest bleeding edge
+- dxvk updated to latest git
+- vkd3ed-proton updated to latest git
+- dxvk-nvapi updated to latest git
+- steam client changes pulled in from upstream
+- vrclient changes pulled in from upstream
+- various game quirk fixes pulled in from upstream (Farlight 84, MultiVersus, Bad Mojo Redux, (Arcanum: Of Steamworks and Magick Obscura)
+- umu clients can now run winetricks verbs (Thanks R1kaB3rN)
+- added pending patch for DXGI_FORMAT_R8G8B8A8_UNORM on d2d_wic_render_target_init needed for Alt:V -- GTA V custom client (Thanks S0P4)
+- staging patches rebased (minor)
+- fsr patch rebased (minor)
+- protonfixes: winetricks updated to current git
+- protonfixes: winetricks vcrun2022 sha256 hashes updated for vcrun2022 (Winetricks/winetricks#2235)
+- protonfixes: fix added for Contractors VR (thanks ToRRent1812)
+- protonfixes: fix added for gog: resident evil (thanks ImLinguin and keenanweaver)
+
 ## GE-Proton9-7
 
 HOTFIXES:
