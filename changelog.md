@@ -1,3 +1,13 @@
+## GE-Proton9-10
+
+- Updated wine to latest bleeding edge
+- Updated wine-mono to 9.2.0
+- Updated dxvk to latest git (which includes d8vk now)
+- Removed d8vk build options as it's part of dxvk now
+- Updated proton script so that d8vk is enabled by default as part of dxvk's files
+- Updated vkd3d-proton to latest git
+- protonfixes: added EAC fix to allow elden ring to run even if dlc not owned
+
 ## GE-Proton9-9
 
 Hotfix:
