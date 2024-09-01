@@ -86,9 +86,6 @@ build() {
   ## patches
   sed -i "s|_proton=echo|_proton=/${_protondir}/proton|" "${srcdir}"/launcher.sh
   sed -i -r 's|"GE-Proton.*"|"Proton-GE"|' "${_srcdir}"/compatibilitytool.vdf
-  ## remove artifacts
-  rm "${_srcdir}"/protonfixes/*.tar.xz
-  rm -rf "${_srcdir}"/protonfixes/.git*
   ## fixes from namcap inspection
   strip --preserve-dates --strip-unneeded "${_srcdir}"/files/bin/wine*
 }
@@ -103,7 +100,6 @@ package() {
   mv "${_srcdir}/LICENSE" "${pkgdir}/${_licensedir}/license"
   mv "${_srcdir}/LICENSE.OFL" "${pkgdir}/${_licensedir}/license_OFL"
   mv "${_srcdir}/PATENTS.AV1" "${pkgdir}/${_licensedir}/license_AV1"
-  mv "${_srcdir}/protonfixes/LICENSE" "${pkgdir}/${_licensedir}/license_protonfixes"
   ## config files
   install --mode=0775 --group=50 "${srcdir}"/user_settings.py "${pkgdir}/${_protoncfg}"
   install --mode=0644 "${srcdir}"/pam_limits.conf "${pkgdir}"/etc/security/limits.d/10-games.conf
