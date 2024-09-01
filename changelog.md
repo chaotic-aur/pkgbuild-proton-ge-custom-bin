@@ -1,6 +1,6 @@
 ## GE-Proton9-12
 
-# proton:
+### proton:
 
 - Added latest upstream proton changes
 - Added latest upstream steamclient changes
@@ -8,7 +8,7 @@
 - Updated dxvk to latest git
 - Updated vkd3d to latest git
 
-# protonfixes:
+### protonfixes:
 
 - Libmspack, xrandr, cabextract are now built as part of the proton-ge build process instead of being included as prebuilt binaries (thanks R1kaB3rN)
 - Winetricks updated to latest git
