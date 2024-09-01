@@ -1,3 +1,25 @@
+## GE-Proton9-12
+
+# proton:
+
+- Added latest upstream proton changes
+- Added latest upstream steamclient changes
+- Updated wine to latest bleeding edge
+- Updated dxvk to latest git
+- Updated vkd3d to latest git
+
+# protonfixes:
+
+- Libmspack, xrandr, cabextract are now built as part of the proton-ge build process instead of being included as prebuilt binaries (thanks R1kaB3rN)
+- Winetricks updated to latest git
+- Star citizen protonfix updated (thanks marcan)
+- Fix added for Full Metal Daemon Muramasa (thanks R1kaB3rN)
+- Fix install location of xlive.dll for xliveless (thanks ProjectSynchro)
+- Add fix for Bully: Scholarship edition (thanks Root-Core)
+- Add fix for Dirt 2 (thanks ProjectSynchro)
+- Add fix for CYGNI: All Guns Blazing (thanks Root-Core)
+
+
 ## GE-Proton9-11
 
 - Update wine to latest bleeding edge
