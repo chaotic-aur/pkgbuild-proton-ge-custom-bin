@@ -42,7 +42,7 @@ pkgbase = proton-ge-custom-bin
 	optdepends = wine: support for 32bit prefixes
 	optdepends = xboxdrv: gamepad driver service
 	provides = proton
-	provides = proton-ge-custom=GE.Proton9_12
+	provides = proton-ge-custom=GE.Proton9_13
 	conflicts = proton-ge-custom
 	options = !strip
 	options = emptydirs
