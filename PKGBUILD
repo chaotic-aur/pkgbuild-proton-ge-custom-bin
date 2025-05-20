@@ -84,26 +84,26 @@ sha512sums=('a7224e033beeb64b088cb43d2c1e8aa654cea39bc18b185d55960a00ebf9e93aabc
 
 build() {
   ## patches
-  sed -i "s|_proton=echo|_proton=/${_protondir}/proton|" "$srcdir"/launcher.sh
-  sed -i -r 's|"GE-Proton.*"|"Proton-GE"|' "$_srcdir"/compatibilitytool.vdf
+  sed -i "s|_proton=echo|_proton=/${_protondir}/proton|" "${srcdir}"/launcher.sh
+  sed -i -r 's|"GE-Proton.*"|"Proton-GE"|' "${_srcdir}"/compatibilitytool.vdf
   ## fixes from namcap inspection
-  strip --preserve-dates --strip-unneeded "$_srcdir"/files/bin/wine*
+  strip --preserve-dates --strip-unneeded "${_srcdir}"/files/bin/wine*
 }
 
 package() {
   ## create paths
   install -d "${pkgdir}/${_protondir}/"
   install -d "${pkgdir}/${_licensedir}/"
-  install -d "${pkgdir}/$(dirname "$_execfile")/"
+  install -d "${pkgdir}/$(dirname "${_execfile}")/"
   install -d "${pkgdir}/etc/security/limits.d/"
   ## licenses
   mv "${_srcdir}/LICENSE" "${pkgdir}/${_licensedir}/license"
   mv "${_srcdir}/LICENSE.OFL" "${pkgdir}/${_licensedir}/license_OFL"
   mv "${_srcdir}/PATENTS.AV1" "${pkgdir}/${_licensedir}/license_AV1"
   ## config files
-  install --mode=0775 --group=50 "$srcdir"/user_settings.py "${pkgdir}/${_protoncfg}"
-  install --mode=0644 "$srcdir"/pam_limits.conf "$pkgdir"/etc/security/limits.d/10-games.conf
+  install --mode=0775 --group=50 "${srcdir}"/user_settings.py "${pkgdir}/${_protoncfg}"
+  install --mode=0644 "${srcdir}"/pam_limits.conf "${pkgdir}"/etc/security/limits.d/10-games.conf
   ## executables
-  mv "$_srcdir"/* "${pkgdir}/${_protondir}"
-  install --mode=0755 "$srcdir"/launcher.sh "${pkgdir}/${_execfile}"
+  mv "${_srcdir}"/* "${pkgdir}/${_protondir}"
+  install --mode=0755 "${srcdir}"/launcher.sh "${pkgdir}/${_execfile}"
 }
