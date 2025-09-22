@@ -1,3 +1,17 @@
+## GE-Proton10-16
+
+- wine updated to latest bleeding-edge
+- dxvk updated to latest git
+- vkd3d-proton updated to latest git
+- vkd3d updated to latest git
+- dxvk-nvapi updated to latest git
+- proton build updated to use latest sdk (steam runtime)
+- protonfixes: fix added for ue4ss mod for stellar blade
+- added patch to workaround star citizen "unsupported os" popup
+- etaash (em-10/wine-wayland) patches updated and rebased
+
+Nothing major this release, just the regular updating + rebasing ontop of upstream.
+
 ## GE-Proton10-15
 
 - fixed opening hang in crosscode
@@ -102,7 +116,7 @@ Hotfix:
 ```
 Enable with PROTON_USE_NTSYNC=1
 
-NOTES: 
+NOTES:
 1. Your kernel must be patched with ntsync patches. If your system does not have /dev/ntsync then your kernel does not have the patches required to use ntsync.
 2. Some applications, mostly 32 bit, may also need PROTON_USE_WOW64=1 when using ntsync
 ```
@@ -137,7 +151,7 @@ The 10-5 release was reverted due to the force push per the request of the wine-
 
 ## GE-Proton10-5
 
-Nothing too major here, mostly just an update to upstream's code since it's been about 30 days. 
+Nothing too major here, mostly just an update to upstream's code since it's been about 30 days.
 
 - Wine-wayland patches have been updated/rebased, should fix some nvidia crashes, and no longer need this mesa patch: https://gitlab.freedesktop.org/mesa/mesa/-/merge_requests/34918
 - patches added to help with Wuthering Waves.
@@ -215,7 +229,7 @@ Protonfixes:
 
 Info regarding Wine-Wayland:
 
-YMMV (Your mileage may vary). Most games that utilizes DXVK or VKD3D should be fine. Games that have native Vulkan or OpenGL  are a coin toss. Most launchers should also be fine (Again huge thanks to Etaash, he's been hammering out a lot off the Wine-Wayland bug fixes, including one that was critical for OpenGL and launcher rendering).  If a game or launcher isn't working, please DON'T come bugging us to fix it. Officially we're with Valve on this -- it's not supported. It's there for people to use/try/test out because it's a wanted feature, that's the extent of it. 
+YMMV (Your mileage may vary). Most games that utilizes DXVK or VKD3D should be fine. Games that have native Vulkan or OpenGL  are a coin toss. Most launchers should also be fine (Again huge thanks to Etaash, he's been hammering out a lot off the Wine-Wayland bug fixes, including one that was critical for OpenGL and launcher rendering).  If a game or launcher isn't working, please DON'T come bugging us to fix it. Officially we're with Valve on this -- it's not supported. It's there for people to use/try/test out because it's a wanted feature, that's the extent of it.
 
 New option for using Wine-Wayland:
 
