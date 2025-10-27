@@ -1,3 +1,13 @@
+## GE-Proton10-22
+
+- fixed regression with several games/launchers failing to run due to bad ntdll patch #323 #324 #325 #326 #329
+- Added protonfix for Richard Burns Rally (Open-Wine-Components/umu-protonfixes#400)
+- Added a fix for Persona 5 Strikers that works around Intel CPU crashing
+- updated em-10/wine-wayland patches to latest
+- updated dxvk to latest git
+- updated vkd3d-proton to latest git
+- updated wine to latest bleeding edge
+
 ## GE-Proton10-21
 
 - wine updated to bleeding edge
