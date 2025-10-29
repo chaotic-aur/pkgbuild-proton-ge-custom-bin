@@ -1,16 +1,18 @@
 ## GE-Proton10-24
 
 HOTFIX:
+
 - fix for Space Engineers launch crash
 - fix for Blade & Soul NEO in-game options crash
 - wine updated to latest bleeding edge
 - dxvk updated to latest git
 - vkd3d-proton updated to latest git
-- vkd3d updated to latest git
+- vkd3d updated to latest git 
 
 ## GE-Proton10-23
 
 HOTFIX:
+
 - import upstream fix for Killer Instinct crashing after match end
 - added fix for Heroes of Newerth Reborn not running after Juvio client closes
 - added protonfix for Ghosts n' Goblins Resurrection skill videos not playing
@@ -19,7 +21,7 @@ HOTFIX:
 ## GE-Proton10-22
 
 - fixed regression with several games/launchers failing to run due to bad ntdll patch #323 #324 #325 #326 #329
-- Added protonfix for Richard Burns Rally (https://github.com/Open-Wine-Components/umu-protonfixes/issues/400)
+- Added protonfix for Richard Burns Rally (Open-Wine-Components/umu-protonfixes#400)
 - Added a fix for Persona 5 Strikers that works around Intel CPU crashing
 - updated em-10/wine-wayland patches to latest
 - updated dxvk to latest git
