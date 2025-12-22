@@ -1,3 +1,27 @@
+## GE-Proton10-27
+
+- wine updated to latest bleeding-edge
+- dxvk updated to latest git
+- dxvk-nvapi updated to latest git
+- vkd3d-proton updated to latest git
+- vkd3d updated to latest git
+- winewayland/em-10 patches updated + rebased
+- wine staging patches rebased
+- a status window has been added which now shows when protonfixes are being applied
+- a protonfix has been added that allows heroes of newerth reborn to work again using GAMEID=umu-heroesofnewerthreborn
+- starcitizen protonfixes updated
+- Update fix for Angelic Chaos: RE-BOOT!
+- added protonfix for rocket league in-game voice
+- added protonfix for sword of the stars
+- added eac workaround so the first descendant no longer requires disconnecting network
+- added winetricks patch so xalia temporarily disables while dotnet installers are running, preventing popup spam
+- updated protonfix for space engineers
+- updated protonfix for Full Metal Daemon Muramasa
+- added protonfix for escape from tarkov (game still does not allow online play)
+- added NOSTEAM=1 capability for escape from tarkov so users who own the steam version can also use it for the non-steam version.
+
+Known issue: Blade & Soul NEO no longer launches (it's also broken in upstream proton-experimental)
+
 ## GE-Proton10-26
 
 Github workflows:
