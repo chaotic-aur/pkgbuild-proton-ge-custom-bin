@@ -40,12 +40,12 @@ depends=('python'
   'lib32-mpg123'
   'libsoup'
   # other #
+  'lib32-openssl'
   'lib32-libusb')
 optdepends=('kdialog: KDE splash dialog support'
   'zenity: GNOME splash dialog support'
   'python-kivy: splash dialog support (big picture mode)'
   'steam: use proton with steam like intended'
-  'lib32-openssl: if you plan to run it outside Steam/UMU'
   'lib32-vulkan-icd-loader: dxvk dependency for 32bit prefixes'
   'vulkan-driver: driver to be used by dxvk'
   'winetricks: protonfixes backend - highly recommended'
