@@ -1,3 +1,17 @@
+## GE-Proton10-30
+
+- add upstream patches for Arknights Endfield
+- add pending upstream patch to allow proper placement of systray icons when winewayland is enabled
+- import upstream changes to fix EA games
+- updated em10/wine-wayland patches
+- add changes to allow compiling on aarch64 (yes, proton-ge works on aarch64/ARM! -- still very WIP, YMMV)
+
+Notes regarding aarch64(ARM):
+- currently needs unreleased version of umu-launcher in order to use, as currently there is no aarch64 version of steam client. the umu-launcher changes will be pushed soon.
+- 32 bit games are hit or miss from my limited testing
+- gog installers need X87ReducedPrecision changed to 0 in Config.json for FEX (inside the Proton version's folder) to allow them to run
+- must stress/reiterate YMMV -- your mileage may vary. The upstream work with proton/fex is NOT something we are involved in. If it works then great, if it doesn't -- don't ask us. It's WIP on Valve's side.
+
 ## GE-Proton10-29
 
 Proton:
