@@ -1,3 +1,17 @@
+## GE-Proton10-31
+
+HOTFIX:
+- reverted/disabled winewayland systray icon patch introduced in 10-30 (it caused a lot of breakage in multiple games, as well as breaking in gamescope session on steam deck. no bueno.)
+- fixed video playback regression introduced in 10-29 (fixes video playback in Nioh 3 and a few other games)
+- fixed Warhammer 40k Darktide crashing on opening (issue introduced in 10-29)
+ 
+Fixes:
+- fixed Arknights Endfield anti-cheat triggering if wayland wasn't enabled
+- fixed Duet Night Abyss launch crash & login window not showing on new install
+- fixed Akiba's trip cutscenes + audio + voice audio (game fully works now)
+- fixed Warhammer 40k Vermintide 2 EAC failing file validation when running the game from the launcher (holy butts 6+ year old bug)
+- added protonfix for Warhammer 40k Darktide to skip the launcher -- this prevents a bug where sometimes the game would launch as an audio-only background process when run from the launcher.
+
 ## GE-Proton10-30
 
 - add upstream patches for Arknights Endfield
