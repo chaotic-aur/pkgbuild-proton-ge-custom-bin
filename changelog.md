@@ -1,3 +1,8 @@
+## GE-Proton10-32
+
+HOTFIX:
+ - Forgot to update protonfix to enable gstreamer for Akiba's Trip (Undead & Undressed) -- fixed now so voice and background music actually work (as well as video playback and menu sounds which worked in the previous fix). As mentioned in 10-31 game should be fully functional now.
+
 ## GE-Proton10-31
 
 HOTFIX:
