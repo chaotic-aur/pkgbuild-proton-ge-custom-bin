@@ -79,8 +79,7 @@ source=("${_pkgver}_${pkgrel}.tar.gz::${url}/releases/download/${_pkgver}/${_pkg
 sha512sums=('9fd0b2cfbd501c0b5c892239c392c7283a029b5e5d5a77d3f85b0ce190d555456241a18eebca16b53f094b403499201c13550a3f0b9b365e1a5eb5737cbb7303'
   '09b6523516b07ec40b895867ef3cdb5dfb1eda6b188d0edf0acea9c3141583f43b2b5c1a396f4d52eb2ddb3ae6f111b4a7bc6409c003f09ff8c505b81f2a7297'
   '78ede6d50f9c43407da511c8b37dcf60aae2ddbd461c0081f0d0ce3de08ace3a84dee86e9253acbac829b47c5818ef4e1a354ccb05feaa9853ce279dc3f903fd'
-  'ac2bd634838ffe6b90f2637e229013f0993fc1013271dbeefd216dc262a8bb79e4a5ce15a75cbfcb0c3b521d32f4ebe1ed25a6b066b99cc327b60bd6d7212e6f'
-  '60bcb1ad899d108fca9c6267321d11871feae96b696e44607ef533becc6decb493e93cbe699382e8163ad83f35cfa003a059499c37278f31afeba4700be6e356')
+  'ac2bd634838ffe6b90f2637e229013f0993fc1013271dbeefd216dc262a8bb79e4a5ce15a75cbfcb0c3b521d32f4ebe1ed25a6b066b99cc327b60bd6d7212e6f')
 
 build() {
   ## patches
@@ -95,7 +94,6 @@ package() {
   install -d "${pkgdir}/${_protondir}/"
   install -d "${pkgdir}/${_licensedir}/"
   install -d "${pkgdir}/$(dirname "${_execfile}")/"
-  install -d "${pkgdir}/etc/security/limits.d/"
   install -d "${pkgdir}/usr/lib/modules-load.d"
   ## licenses
   mv "${_srcdir}/LICENSE" "${pkgdir}/${_licensedir}/license"
