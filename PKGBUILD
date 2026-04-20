@@ -55,7 +55,6 @@ optdepends=('vulkan-icd-loader'
 
 ## makepkg options
 options=(!strip emptydirs)
-install=pleasenote.install
 
 ## fix naming conventions, matching upstream
 _pkgname=${pkgname//-bin/}
@@ -76,8 +75,7 @@ url='https://github.com/GloriousEggroll/proton-ge-custom'
 source=("${_pkgver}_${pkgrel}.tar.gz::${url}/releases/download/${_pkgver}/${_pkgver}.tar.gz"
   'user_settings.py'
   'launcher.sh'
-  'proton-ge-custom-bin.conf'
-  'pam_limits.conf')
+  'proton-ge-custom-bin.conf')
 sha512sums=('9fd0b2cfbd501c0b5c892239c392c7283a029b5e5d5a77d3f85b0ce190d555456241a18eebca16b53f094b403499201c13550a3f0b9b365e1a5eb5737cbb7303'
   '09b6523516b07ec40b895867ef3cdb5dfb1eda6b188d0edf0acea9c3141583f43b2b5c1a396f4d52eb2ddb3ae6f111b4a7bc6409c003f09ff8c505b81f2a7297'
   '78ede6d50f9c43407da511c8b37dcf60aae2ddbd461c0081f0d0ce3de08ace3a84dee86e9253acbac829b47c5818ef4e1a354ccb05feaa9853ce279dc3f903fd'
@@ -105,7 +103,6 @@ package() {
   mv "${_srcdir}/PATENTS.AV1" "${pkgdir}/${_licensedir}/license_AV1"
   ## config files
   install --mode=0775 --group=50 "${srcdir}"/user_settings.py "${pkgdir}/${_protoncfg}"
-  install --mode=0644 "${srcdir}"/pam_limits.conf "${pkgdir}"/etc/security/limits.d/10-games.conf
   install --mode=0644 "${srcdir}"/${pkgname}.conf "${pkgdir}"/usr/lib/modules-load.d/${pkgname}.conf
   ## executables
   mv "${_srcdir}"/* "${pkgdir}/${_protondir}"
